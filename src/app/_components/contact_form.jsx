@@ -59,7 +59,11 @@ export function ContactForm () {
             {loading
                 ? <CircleLoader />
                 : send 
-                    ? <MailSend />
+                    ?         
+                    <div className="max-w-[800px] px-10 rounded-xl bg-bg-low mt-14 py-5 gap-3 bg-[rgba(239,239,239,1)] text-center flex flex-col items-center justify-center  text-typo font-semibold text-xl xl:text-lg sm:text-base md:px-5">
+                        <p>Demande de contact bien reçu !</p>
+                        <p className="font-medium">Nous vous répondrons dans les plus brefs délais !</p>
+                    </div>
                     : <form onSubmit={handleSubmit(onSubmit)} className='grid grid-cols-2 bg-[rgba(239,239,239,1)] relative text-white px-12 pt-12 gap-x-10 gap-y-5 w-full rounded-md lg:w-[80vw] sm:flex sm:flex-col 2sm:w-[90vw] md:px-3 md:pt-3'>
                         <InterfaceTextInput label='Nom *' placeholder='Dubuis' name="lastname" options={{...register("lastname")}} commonError={errors.lastname} commonErrorMessage={errors.lastname?.message}/>
                         <InterfaceTextInput label='Prénom' placeholder='Joe' name="firstname" options={{...register("firstname")}} commonError={errors.firstname} commonErrorMessage={errors.firstname?.message}/>

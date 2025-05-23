@@ -184,7 +184,9 @@ export default function TekalpFeature({articles}) {
 
             <section className='flex flex-col gap-5 w-full py-20 md:py-5 mb-28 ml'>
       <div className='flex justify-between items-end w-full relative ml-60 2xl:ml-0 xl:ml-0 lg:ml-0 md:ml-2'>
-    <CustomTitle title1="NOS" title2="PROMESSES" />
+    <div className='ml-12 lg:ml-10 md:ml-0'>
+      <CustomTitle title1="NOS" title2="PROMESSES" />
+    </div>
   </div>
 
   <div className='grid grid-cols-3 gap-5 text-new-black relative max-w-[1200px] w-[95%] mx-auto justify-items-center mt-24 lg:w-full lg:px-5 sm:px-3 sm:grid-cols-1 sm:mt-10'>

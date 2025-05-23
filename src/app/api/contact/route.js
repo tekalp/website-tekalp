@@ -18,7 +18,7 @@ export async function POST(request) {
       
       const mailData = {
         from: 'TEKALP <websitetekalp@gmail.com>',
-        to: 'bellurdylan@gmail.com',
+        to: 'contact@tekalp.fr',
         subject: `TEKALP - DEMANDE DE CONTACT`,
         html: 
         `<div>
