@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-white;
+    @apply bg-[rgb(255,254,251)];
+    @apply overflow-x-hidden;
+    @apply scroll-smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (max-width: 1024px) {
+    body {
+      @apply overflow-y-auto;
+    }
+  }
+}
+
+@layer utilities {
+  #mainIndex > section {
+    scroll-snap-align: end;
+  }
+
+  .no-visible-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .no-visible-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .embla__dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: calc((2.6rem - 1.4rem) / 2 * -1);
+  }
+
+  .embla__dots2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px
+  }
+
+  .embla__dot {
+    width: 2.6rem;
+    height: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .embla__dot2 {
+    width: 40px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .embla__dot:after {
+    box-shadow: inset 0 0 0 0.2rem gray;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    content: "";
+  }
+  .embla__dot2:after {
+    box-shadow: inset 0 0 0 0.2rem gray;
+    width: 40px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    content: "";
+  }
+  .embla__dot3:after {
+    box-shadow: inset 0 0 0 0.2rem gray;
+    width: 40px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    content: "";
+  }
+  .embla__dot--selected:after {
+    box-shadow: inset 0 0 0 0.2rem white;
+  }
+  .embla__dot2--selected:after {
+    box-shadow: inset 0 0 0 0.2rem white;
+  }
+
+  .embla__dot3--selected:after {
+    box-shadow: inset 0 0 0 0.2rem rgb(27,24,23);
+  }
+
+  @media (max-width: 768px) {
+    .embla__dot:after {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+    .embla__dot {
+      width: 2rem;
+      height: 2rem;
+    }
+    .arrow {
+      width: 24px !important;
+    }
+
+    .arrow2 {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  }
+
+  .embla-thumbs__slide__number {
+    border-radius: 1.8rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    touch-action: manipulation;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(192, 192, 192);
+  }
+  .embla-thumbs__slide--selected .embla-thumbs__slide__number {
+    color: rgb(54, 49, 61);
+  }
+
+  #article h1 {
+    font-weight: bold;
+    font-size: 28px;
+    @apply my-5;
+  }
+
+  #article h2 {
+    font-weight: 600;
+    font-size: 20px;
+    @apply my-3;
+  }
+
+  #article div {
+    @apply my-3;
+  }
+
+  #article h3 {
+    @apply bg-typo;
+    @apply px-5;
+    @apply py-3;
+    @apply text-white;
+    @apply text-lg;
+    @apply text-nowrap;
+    @apply w-fit;
+    @apply m-auto;
+    @apply mt-7;
+    @apply rounded-md
+  }
+
+  #article h3 > a,
+  #article h3 > span {
+    @apply no-underline;
+    @apply font-semibold;
+  }
+
+  #article a {
+    @apply underline;
+    @apply underline-offset-4;
+    @apply font-medium;
+  }
+
+  #article img {
+    @apply py-5;
+    @apply m-auto;
+  }
+
+  @media (max-width: 1024px) {
+  }
+
+  @media (max-width: 768px) {
+    #article h1 {
+      font-size: 20px;
+      @apply my-5;
+    }
+
+    #article h2 {
+      font-weight: 600;
+      font-size: 18px;
+      @apply my-3;
+    }
+
+    #article span {
+      @apply text-sm;
+    }
+
+    #article h3 {
+      @apply px-3;
+      @apply py-1.5;
+      @apply rounded-lg;
+      @apply text-base;
+    }
+
+    .embla__dot2 {
+      width: 20px;
+      height: 4px;
+    }
+  }
+
+  .rotate-text{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .intra-link {
+    @apply underline;
+    @apply underline-offset-4;
+    @apply decoration-2;
+    @apply decoration-dark_blue/70;
+    @apply font-semibold;
+  }
+
+  .gradient-text {
+    background: -webkit-linear-gradient(90deg, #00aaec 0%, #006186 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text_bloc {
+    background: -webkit-linear-gradient(0deg, #ffffff 17.73%, #dd1a21 65.64%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text_actu {
+    background: -webkit-linear-gradient(0deg, #ffffff 47%, #00aaec 97.5%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #272423;
+    color: #fff;
+    pointer-events: none;
+  }
+
+  .counter {
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+    height: 100px;
+    font-size: 100px;
+    line-height: 102px;
+    clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
+    font-weight: 400;
+  }
+
+  .counter-1,
+  .counter-2,
+  .counter-3 {
+    position: relative;
+    top: -15px;
+  }
+
+  .num1offset1 {
+    position: relative;
+    right: -25px;
+  }
+
+  .num1offset2 {
+    position: relative;
+    right: -10px;
+  }
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: rgb(80, 80, 80);
+  }
+
+  .loader-1 {
+    position: relative;
+    background: #fff;
+    width: 200px;
+  }
+
+  .loader-2 {
+    position: relative;
+    width: 100px;
+    background: #fff;
+  }
+
+  .bar {
+    height: 50px;
+  }
+
+  .website-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-revealer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header-revealer:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 110%;
+    background: #fff;
+    top: 80px;
+  }
+}
