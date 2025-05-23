@@ -7,17 +7,18 @@ dotenv.config();
 export async function POST(request) {
     const body = await request.json();
     const transporter = nodemailer.createTransport({
-        host: "mail.neofilmled.fr",
+        host: "smtp.gmail.com",
         port: 465,
         secure: true,
         auth: {
-          user: 'tekalp@neofilmled.fr',
-          pass: process.env.EMAIL_SECRET_KEY,
+          user: 'websitetekalp@gmail.com',
+          pass: "nxkd nuil fgap qnos",
         },
       })
+      
       const mailData = {
-        from: 'no-reply@dev.fr',
-        to: 'lucas.soubry@gmail.com',
+        from: 'TEKALP <websitetekalp@gmail.com>',
+        to: 'bellurdylan@gmail.com',
         subject: `TEKALP - DEMANDE DE CONTACT`,
         html: 
         `<div>
