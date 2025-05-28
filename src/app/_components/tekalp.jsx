@@ -368,11 +368,11 @@ export function BowSlider ({image, title1, title2, style, href1, line=false, hre
                   <button className='bg-bg-gray z-10 text-new-black w-[220px] px-3 py-2 rounded-md font-medium absolute bottom-8 left-20 xl:left-10 sm:bottom-0 sm:h-[13%] sm:left-0 sm:w-[48%] sm:bg-[rgba(236,236,236,1)] sm:border-none'>PROCHAIN WEBINAIRE</button>
                 </Link>
               : <Link href={`/blogs#event`}>
-                  <button className='bg-bg-gray z-10 text-new-black w-[200px] px-3 py-2 rounded-md font-medium absolute bottom-8 left-20 xl:left-10 sm:bottom-0 sm:h-[13%] sm:left-0 sm:w-[48%] sm:bg-[rgba(236,236,236,1)] sm:border-none'>NOTRE ACTUALITÉ </button>
+                  <button className='bg-bg-gray z-10 text-new-black w-[220px] px-3 py-2 rounded-md font-medium absolute bottom-8 left-20 xl:left-10 sm:bottom-0 sm:h-[13%] sm:left-0 sm:w-[48%] sm:bg-[rgba(236,236,236,1)] sm:border-none'>NOTRE ACTUALITÉ </button>
                 </Link>
             }
             <Link href={`${href2}`}>
-              <button className='bg-new-black text-white w-[200px] border px-3 py-2 rounded-md font-medium absolute bottom-8 right-20 xl:right-10 sm:bottom-0 sm:h-[13%] sm:right-0 sm:w-[48%] sm:bg-[rgba(236,236,236,1)] sm:text-new-black sm:border-none'>{button2}</button>
+              <button className='bg-new-black text-white w-[220px] border px-3 py-2 rounded-md font-medium absolute bottom-8 right-20 xl:right-10 sm:bottom-0 sm:h-[13%] sm:right-0 sm:w-[48%] sm:bg-[rgba(236,236,236,1)] sm:text-new-black sm:border-none'>{button2}</button>
             </Link>
       </div>
     )
