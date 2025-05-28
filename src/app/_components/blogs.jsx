@@ -118,7 +118,7 @@ export default function BlogsFeature({articles, solutions, linkedInPosts}) {
 
             <section className='w-[100vw] min-h-withOutHeader md:min-h-[450px] overflow-hidden h-withOutHeader md:h-auto relative hxl:min-h-full hxl550:min-h-[450px]'>
                 <div className='flex h-full'>
-                    <BowSlider image={main3} title1="À LA UNE CHEZ TEKALP" title2={<span className='font-magra'>DÉCOUVREZ NOS DERNIÉRES INNOVATIONS ET INITIATIVES</span>} href2="/company" button2="L'ENTREPRISE" styleTitle2="text-[3vw] md:text-3xl" />
+                    <BowSlider image={main3} title1="À LA UNE CHEZ TEKALP" title2={<span className='font-magra'>DÉCOUVREZ NOS DERNIÉRES INNOVATIONS ET INITIATIVES</span>} href2="https://sibforms.com/serve/MUIFAKzNvp8vGI6SAeqHtXSIHtDgY6hBo6e_6O2gqRPwIIDWUY0OwIEoM7WxZrKNj4RpkAzzUyVc-ZXxrl0ILx4cnxZR5RuNYwVgJCESOXHGs5LzdqSadN3Zo0U_RwslNw7uA9ZwSWOfzO7_UQFY8XPQp8YcjvTkx6hcKMZFf8bUUSzOZoufFcr86qcUiimyrRuEuxdOpjnxLpyL" button2="NOTRE NEWSLETTER" styleTitle2="text-[3vw] md:text-3xl" />
                 </div>
             </section>
 

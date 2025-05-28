@@ -12,7 +12,7 @@ export async function POST(request) {
         secure: true,
         auth: {
           user: 'websitetekalp@gmail.com',
-          pass: "nxkd nuil fgap qnos",
+          pass: process.env.EMAIL_SECRET_KEY
         },
       })
       
